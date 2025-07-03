@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 *{
     box-sizing: border-box;
@@ -148,4 +148,16 @@ h1{
 .insect img{
     width:100px;
     height:100px;
+}
+
+.exit-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

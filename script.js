@@ -5,6 +5,7 @@ const game_container=document.getElementById('game_container')
 const timeEl=document.getElementById('time')
 const scoreEl=document.getElementById('score')
 const message=document.getElementById('message')
+const exitBtn = document.getElementById('exit-btn');
 let seconds=0
 let score=0
 let selected_insect={}
@@ -79,4 +80,12 @@ function increaseScore(){
         message.classList.add('visible')
     }
     scoreEl.innerHTML = `Score: ${score}`
+}
+
+function exitGame() {
+    window.location.reload();
+}
+
+if (exitBtn) {
+    exitBtn.addEventListener('click', exitGame);
 }
